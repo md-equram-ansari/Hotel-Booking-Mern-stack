@@ -33,7 +33,6 @@ app.use(cors({
     origin: 'http://localhost:3000',
 }));
 
-
 mongoose.connect(process.env.MONGO_URL);
 function getUserDataFromReq(req) {
     return new Promise((resolve, reject) => {
